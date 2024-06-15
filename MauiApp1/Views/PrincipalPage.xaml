@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.PrincipalPage"
+             Title="PrincipalPage"
+             Background="IndianRed">>
+    
+    
+    <VerticalStackLayout>
+
+        <Image Source="OIP.jpg" WidthRequest="400" Margin="0,20"/>
+
+        <Button 
+            Clicked="btnSalir_Clicked"
+            x:Name="btnSalir"
+            Text="Salir" 
+            Background="BlueViolet" 
+            TextColor="White" 
+            Margin="0,10" />
+        <Button 
+            Clicked="btnAcerca_Clicked"
+            x:Name="btnAcerca"
+            Text="Acerca" 
+            Background="BlueViolet" 
+            TextColor="White" 
+            Margin="0,10" />
+
+    </VerticalStackLayout>
+</ContentPage>

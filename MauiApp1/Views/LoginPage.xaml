@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.LoginPage"
+             Title="LoginPage"
+             Background="IndianRed">
+             
+    <VerticalStackLayout>
+        <Label 
+            Label 
+            TextColor="WhiteSmoke"
+            FontAttributes="Bold"
+            Text="Bienvenid@s"
+            FontSize="Large"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image Source="login.png" Margin="0,20" />
+
+        <Label Text="Ingrese su Usuario" TextColor="Black" HorizontalOptions="CenterAndExpand" />
+        <Entry   
+            Keyboard="Email"
+            TextColor="Black" 
+            x:Name="Usuario"
+            Placeholder="nombre@correo.com" 
+            HorizontalOptions="Center"/>
+
+        <Label Text="Ingrese su Contraseña" TextColor="Black" HorizontalOptions="CenterAndExpand" />
+        <Entry 
+            Keyboard="Numeric"
+            x:Name="Contraseña"
+            Placeholder="123456" 
+            IsPassword="True" 
+            TextColor="Black" 
+            HorizontalOptions="Center"/>
+
+        <Button 
+            TextColor="WhiteSmoke"
+            BackgroundColor="BlueViolet"
+            Text="INGRESAR" 
+            x:Name="btnIngresar"
+            Clicked="btnIngresar_Clicked" 
+            Margin="0,20"/>
+        <ActivityIndicator />
+        <Label Text="ITES - 2024" TextColor="BlueViolet" HorizontalOptions="Center" FontSize="Micro" />
+    </VerticalStackLayout>
+</ContentPage>
